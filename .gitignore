@@ -1,5 +1,6 @@
 yarn.lock
 yarn-error.log
+coverage
 
 .env
 node_modules
