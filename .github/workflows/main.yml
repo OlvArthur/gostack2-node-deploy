@@ -59,7 +59,8 @@ jobs:
         script: | 
           cd ~/app
           ./node_modules/.bin/typeorm migration:run
-          
+    
+    # Restart no servidor Node.js
     - name: Restart node server with pm2
       uses: appleboy/ssh-action@master
       with:
@@ -70,4 +71,4 @@ jobs:
         script: | 
           pm2 restart gobarber-api
     
-    # Restart no servidor Node.js 
+     
